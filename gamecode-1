@@ -1,0 +1,48 @@
+print("welcome to the quiz program")
+
+playing = input("are you ready for the game? ")
+
+if playing.lower() != "yes":
+    quit()
+print("okay! lets start the game")
+score = 0
+
+answer = input("which planet is kmown as the red planet? ")
+if answer.lower() == "mars":
+    print("correct!")
+    score += 1
+else:
+    print("incorrect!")
+    
+answer = input("what is the currency Japan? ")
+if answer.lower() == "japanese yen":
+    print("correct!")
+    score += 1
+else:
+    print("incorrect!")    
+    
+answer = input("what is the most widely spoken language in the world? ")
+if answer.lower() == "Mandarin Chinese":
+    print("correct!")
+    score += 1
+else:
+    print("incorrect!")    
+    
+answer = input("how many colors are there in a rainbow? ")
+if answer.lower() == "seven":
+    print("correct!")
+    score += 1
+else:
+    print("incorrect!")    
+    
+answer = input("what do you call a baby kangaroo? ")
+if answer.lower() == "joey":
+    print("correct!")
+    score += 1
+else:
+    print("incorrect!")    
+    
+print("you got" +str(score) +"questions correct!")
+print("you got" +str((score/8)*100)+ "%.")
+
+    
